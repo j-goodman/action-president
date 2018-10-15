@@ -110,11 +110,11 @@ let panels = [
       imageSource: 'images/five-a.png',
       frames: 47,
     }),
-    new Panel ({
-      name: 'five-b',
-      imageSource: 'images/five-b.png',
-      frames: 11,
-    }),
+    // new Panel ({
+    //   name: 'five-b',
+    //   imageSource: 'images/five-b.png',
+    //   frames: 11,
+    // }),
 ]
 
 window.setInterval(drawPanels, 30)
