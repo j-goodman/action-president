@@ -61,6 +61,9 @@ let drawPanels = () => {
         if (scrollOffset > 0) {
             panel.frame = 0
         }
+        if (scrollOffset < 0) {
+            panel.frame = panel.frames - 1
+        }
         ctx.drawImage(
             panel.image,
             0 - frameOffset,
