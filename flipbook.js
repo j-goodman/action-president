@@ -86,9 +86,14 @@ let panels = [
       frames: 38,
     }),
     new Panel ({
-      name: 'color-two',
-      imageSource: 'images/color-two.png',
-      frames: 29,
+      name: 'two-a',
+      imageSource: 'images/two-a.png',
+      frames: 9,
+    }),
+    new Panel ({
+      name: 'two-b',
+      imageSource: 'images/two-b.png',
+      frames: 20,
     }),
     new Panel ({
       name: 'color-three',
@@ -119,6 +124,26 @@ let panels = [
       name: 'color-six',
       imageSource: 'images/color-six.png',
       frames: 15,
+    }),
+    new Panel ({
+      name: 'color-seven',
+      imageSource: 'images/color-seven.png',
+      frames: 34
+    }),
+    new Panel ({
+      name: 'color-eight',
+      imageSource: 'images/color-eight.png',
+      frames: 26
+    }),
+    new Panel ({
+      name: 'color-nine',
+      imageSource: 'images/color-nine.png',
+      frames: 41
+    }),
+    new Panel ({
+      name: 'color-ten',
+      imageSource: 'images/color-ten.png',
+      frames: 7
     }),
 ]
 
