@@ -1,4 +1,4 @@
-canvas {
+canvas, img {
     height: 100%;
     left: 0;
     position: fixed;
@@ -6,9 +6,13 @@ canvas {
     width: 100%;
 }
 
+img {
+    position: absolute;
+}
+
 @media (min-aspect-ratio: 1/1) {
-    canvas {
-        width: 32%;
+    canvas, img {
+        width: 30%;
         margin-left: 25%;
     }
 }

@@ -6,6 +6,7 @@ let setupCanvas = () => {
     // Assign canvas variables, set canvas size, and draw panels
     canvas = document.getElementById('canvas')
     ctx = canvas.getContext('2d')
+    window.scrollTo(0, 0)
     resizeEvent()
     document.getElementById('loader-note').innerText = ''
 }
@@ -142,8 +143,13 @@ let panels = [
     }),
     new Panel ({
       name: 'color-ten',
-      imageSource: 'images/color-ten.png',
-      frames: 13
+      imageSource: 'images/color-ten-short.png',
+      frames: 12
+    }),
+    new Panel ({
+      name: 'color-eleven',
+      imageSource: 'images/color-eleven.png',
+      frames: 6
     }),
 ]
 
