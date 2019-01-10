@@ -142,15 +142,25 @@ let panels = [
       frames: 41
     }),
     new Panel ({
-      name: 'color-ten',
-      imageSource: 'images/color-ten-short.png',
+      name: 'ten-crop',
+      imageSource: 'images/ten-crop.png',
       frames: 12
     }),
-    new Panel ({
-      name: 'color-eleven',
-      imageSource: 'images/color-eleven.png',
-      frames: 6
-    }),
+    // new Panel ({
+    //   name: 'color-ten',
+    //   imageSource: 'images/color-ten.png',
+    //   frames: 33
+    // }),
+    // new Panel ({
+    //   name: 'color-eleven',
+    //   imageSource: 'images/color-eleven.png',
+    //   frames: 43
+    // }),
+    // new Panel ({
+    //   name: 'end',
+    //   imageSource: 'images/end.png',
+    //   frames: 5
+    // }),
 ]
 
 window.setInterval(drawPanels, 30)
