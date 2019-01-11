@@ -1,6 +1,6 @@
 let canvas = null
 let ctx = null
-let frameRate = 100
+let frameRate = 108
 let imageFailures = 0
 
 let setupCanvas = () => {
@@ -30,7 +30,6 @@ function Panel (obj) {
 
 let drawPanels = () => {
     // Render all panels onto the canvas
-    // (to do: only render the panels within the reader's field of vision)
     ctx.clearRect(0, 0, canvas.width, canvas.height)
     let objectiveScroll = window.scrollY
     let totalFrames = 0
@@ -150,11 +149,6 @@ let panels = [
       imageSource: 'images/color-nine.png',
       frames: 41
     }),
-    // new Panel ({
-    //   name: 'ten-crop',
-    //   imageSource: 'images/ten-crop.png',
-    //   frames: 12
-    // }),
     new Panel ({
       name: 'color-ten',
       imageSource: 'images/color-ten.png',
