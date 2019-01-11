@@ -1,6 +1,7 @@
 let canvas = null
 let ctx = null
 let frameRate = 100
+let imageFailures = 0
 
 let setupCanvas = () => {
     // Assign canvas variables, set canvas size, and draw panels
@@ -64,14 +65,22 @@ let drawPanels = () => {
         } else if (scrollOffset < 0 && panel.frame < panel.frames - 1) {
             panel.frame += 1
         }
-
-        ctx.drawImage(
-            panel.image,
-            0 - frameOffset,
-            scrollOffset,
-            canvas.width * panel.frames,
-            height(panel, canvas)
-        )
+        try {
+            ctx.drawImage(
+                panel.image,
+                0 - frameOffset,
+                scrollOffset,
+                canvas.width * panel.frames,
+                height(panel, canvas)
+            )
+        } catch (error) {
+            console.log(`Failed to load image ${panel.image.src}`)
+            if (imageFailures >= 300) {
+                window.location.reload()
+            } else {
+                imageFailures += 1
+            }
+        }
     })
 }
 
